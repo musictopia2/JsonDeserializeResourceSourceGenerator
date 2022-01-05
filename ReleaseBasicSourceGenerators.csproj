@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<LangVersion>latest</LangVersion>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<Description>Description</Description>
+		<PackageProjectUrl>https://github.com/musictopia2/ReleaseBasicSourceGenerators</PackageProjectUrl>
+		<Version>1.0.1</Version>
+	</PropertyGroup>
+	<PropertyGroup>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+	</ItemGroup>
+	<ItemGroup>
+
+		<PackageReference Include="CommonSourceGeneratorsHelpers" Version="2.0.25" PrivateAssets="all" />
+
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.0.1" PrivateAssets="all" />
+		<PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.3" PrivateAssets="all" />
+	</ItemGroup>
+</Project>
