@@ -1,4 +1,4 @@
-﻿namespace ReleaseBasicSourceGenerators;
+﻿namespace JsonDeserializeResourceSourceGenerator;
 public class MySourceGenerator : IIncrementalGenerator
 {
     public void Initialize(IncrementalGeneratorInitializationContext context)

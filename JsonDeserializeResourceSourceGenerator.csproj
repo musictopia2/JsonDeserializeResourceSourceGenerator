@@ -7,7 +7,7 @@
 		<LangVersion>latest</LangVersion>
 		<IncludeBuildOutput>false</IncludeBuildOutput>
 		<Description>Description</Description>
-		<PackageProjectUrl>https://github.com/musictopia2/ReleaseBasicSourceGenerators</PackageProjectUrl>
+		<PackageProjectUrl>https://github.com/musictopia2/JsonDeserializeResourceSourceGenerator</PackageProjectUrl>
 		<Version>1.0.1</Version>
 	</PropertyGroup>
 	<PropertyGroup>
