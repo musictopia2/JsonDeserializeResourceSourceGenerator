@@ -37,7 +37,7 @@ public class MySourceGenerator : IIncrementalGenerator
             classes.Add(className);
             string fins = $"{className}.g.cs";
             string data = file.Content.Replace("\"", "\"\""); //since its not bad, use the standard string and not custom is fine this time.
-            string source = @$"using zz = CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.JsonSerializers.SystemTextJsonStrings;
+            string source = @$"using zz1 = CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.JsonSerializers.SystemTextJsonStrings;
 namespace {name};
 public static class {className}
 {{
@@ -49,13 +49,13 @@ public static class {className}
     public static T GetResource<T>()
     {{
         string data = GetData();
-        T output = zz.DeserializeObject<T>(data);
+        T output = zz1.DeserializeObject<T>(data);
         return output;
     }}
     public static async Task<T> GetResourceAsync<T>()
     {{
         string data = GetData();
-        T output = await zz.DeserializeObjectAsync<T>(data);
+        T output = await zz1.DeserializeObjectAsync<T>(data);
         return output;
     }}
 }}";
